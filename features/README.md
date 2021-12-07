@@ -38,6 +38,35 @@ The microformats principles:
 
 
 # Maps
+Mapy.cz is a Czech internet and mobile map application developed by Seznam.cz . All map materials show the Czech Republic , most of them also Slovakia and some types of maps cover the whole world . The many features of the application include route planner by car, public transport, bicycle, on foot and more.
+
+API Documentation:
+* https://api.mapy.cz/
 
 # Open graph markup for Facebook
+Most content is shared to Facebook as a URL, so it's important that you mark up your website with Open Graph tags to take control over how your content appears on Facebook. For your website to be shared correctly by our crawler, your server must also use the gzip and deflate encodings.
+
+Without these Open Graph tags, the Facebook Crawler uses internal heuristics to make a best guess about the title, description, and preview image for your content. Designate this info explicitly with Open Graph tags to ensure the highest quality posts on Facebook.
+
+Markup Example: <br>
+For example, here's how to mark up an article, news story or blog post with og:type="article" and several additional properties <br>
+`<meta property="og:url"                content="http://www.nytimes.com/2015 02/19/arts/international/when-great-minds-dont-think-alike.html" />`<br>
+`<meta property="og:type"               content="article" />`<br>
+`<meta property="og:title"              content="When Great Minds Don’t Think Alike" />`<br>
+`<meta property="og:description"        content="How much does culture influence creative thinking?" />`<br>
+`<meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />`<br>
+
+Documentation:
+* https://developers.facebook.com/docs/sharing/webmasters/
+
 # Cards markup for Twitter
+Twitter card tags look similar to Open Graph tags, and are based on the same conventions as the Open Graph protocol. When using Open Graph protocol to describe data on a page, it is easy to generate a Twitter card without duplicating tags and data. When the Twitter card processor looks for tags on a page, it first checks for the Twitter-specific property, and if not present, falls back to the supported Open Graph property. This allows for both to be defined on the page independently, and minimizes the amount of duplicate markup required to describe content and experience.
+
+Markup example: <br>
+`<meta name="twitter:card" content="summary" />`<br>
+`<meta name="twitter:site" content="@nytimesbits" />`<br>
+`<meta name="twitter:creator" content="@nickbilton" />`<br>
+`<meta property="og:url" content="http://bits.blogs.nytimes.com/2011/12/08/a-twitter-for-my-sister/" />`<br>
+`<meta property="og:title" content="A Twitter for My Sister" />`<br>
+`<meta property="og:description" content="In the early days, Twitter grew so quickly that it was almost impossible to add new features because engineers spent their time trying to keep the rocket ship from stalling." />`<br>
+`<meta property="og:image" content="http://graphics8.nytimes.com/images/2011/12/08/technology/bits-newtwitter/bits-newtwitter-tmagArticle.jpg" />`
